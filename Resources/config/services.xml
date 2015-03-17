@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="webility_entity_resource.event_subscriber.load_orm_metadata.class">Webility\Bundle\EntityResourceBundle\EventListener\LoadORMMetadataSubscriber</parameter>
+    </parameters>
+
+    <services>
+        <service id="webility_entity_resource.event_subscriber.load_orm_metadata" class="%webility_entity_resource.event_subscriber.load_orm_metadata.class%">
+            <argument>%webility_entity_resource.config.classes%</argument>
+            <tag name="doctrine.event_subscriber" />
+        </service>
+    </services>
+</container>
