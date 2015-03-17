@@ -1,0 +1,35 @@
+{
+    "name": "webility/entity-resource-bundle",
+    "title": "Entity Resource Bundle",
+    "description": "Allow to transform mapped superclass to entity. Override vendor entity and repository (as service)",
+    "keywords": [
+        "webility", "symfony2", "doctrine", "vendor entity", "extendable entity"
+    ],
+    "homepage": "http://webility.pl",
+    "authors": [
+        {
+            "name": "Maciej Pyszynski",
+            "url": "http://webility.pl"
+        }
+    ],
+    "maintainers": [
+        {
+            "name": "Maciej Pyszynski",
+            "url": "http://webility.pl"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "doctrine/orm": "~2.3",
+        "symfony/symfony": "2.3.*"
+    },
+    "target-dir": "Webility/Bundle/EntityResourceBundle",
+    "autoload": {
+        "psr-0": { "Webility\\Bundle\\EntityResourceBundle": "" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1-dev"
+        }
+    }
+}
